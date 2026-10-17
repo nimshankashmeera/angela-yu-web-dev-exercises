@@ -40,3 +40,20 @@ var cletter = firstletter.toUpperCase();
 
 alert("hello" + cletter + name.slice(1,100));
 
+
+
+//========================
+
+// hello Name
+
+//========================
+
+var name = prompt("what is your name?");
+var name = name.toLowerCase();
+var name2 = name.length;
+var firstletter = name.slice(0,1);
+var cletter = firstletter.toUpperCase();
+
+alert("hello " + cletter + name.slice(1,name2));
+
+
