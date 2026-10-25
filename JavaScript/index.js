@@ -162,6 +162,96 @@ console.log("You have " +ageindays +" days, " + ageinweeks+" weeks, and " +agein
 }
 
 
+
+
+//====================================
+
+outputs and return values
+
+//====================================
+
+
+function getMilk(money) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+
+  var nbot=math.floor(money/1.5);
+  console.log("buy " + nbot + "bottles of milk");
+
+  
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+
+  return money % 1.5;
+}
+
+var change = getMilk(12);
+console.log(change);
+
+
+//--------------------------------------------------------------
+
+  
+function getMilk(money,costperbot) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+
+  
+  console.log("buy " + calbot(money,costperbot) + "bottles of milk");
+
+  
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+
+  return calchange(money,costperbot);
+}
+
+function calbot(startingmoney,costperbottle){
+    var numofbot = math.floor(startingmoney/costperbottle);
+    return numofbot;
+}
+function calchange(startingmamount,costperbottle){
+    var change = (startingamount%costperbottle);
+    return change;
+}
+
+getMilk(5,1.5);
+
+
+
+
+//--------------------------------------------------------------
+
+//bmi calculater
+//--------------------------------------------------------------
+
+
 //========================
 
 //excercise
