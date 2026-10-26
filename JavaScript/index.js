@@ -248,8 +248,31 @@ getMilk(5,1.5);
 
 //--------------------------------------------------------------
 
-//bmi calculater
+// bmi calculator
 //--------------------------------------------------------------
+
+
+
+function bmi(weight,height){
+    var bmi1 = bmiCalculator(weight,height);
+    return math.round(bmi1);
+}
+
+// The first parameter should be the weight and the second should be the height.
+
+
+function bmiCalculator(weight,height){
+    var bmiCalculator = weight/(height*height);
+    return bmiCalculator;
+}
+
+
+
+//=============================================================
+//--------------------------------------------------------------
+//random number generation
+//--------------------------------------------------------------
+//==============================================================
 
 
 //========================
